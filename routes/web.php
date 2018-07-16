@@ -22,3 +22,7 @@ Route::get('/olapessoa/{name}', function($name='Estranho'){
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('pm/{palavra}','StringsController@mai');
+
+Route::get('teste/{palavra}','StringsController@teste');
